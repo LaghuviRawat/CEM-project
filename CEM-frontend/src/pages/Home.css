@@ -9,3 +9,74 @@
   gap: 20px;
   margin-top: 20px;
 }
+/* --- CEM-frontend/src/pages/Home.css --- */
+
+/* Ensure Home component has padding and is centered */
+.home-page-container {
+    padding: 40px; 
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.home-title {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.home-subtitle {
+    margin-bottom: 30px;
+    color: var(--secondary-grey);
+    font-size: 1.1em;
+}
+
+/* 1. Calendar Wrapper and Custom Styling */
+.calendar-wrapper {
+    /* Center the calendar and give it a clean shadow */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Target the react-calendar root class */
+.react-calendar {
+    width: 100%; /* Make it take the full width of the wrapper */
+    max-width: 700px; /* Set a clean maximum size */
+    border: none !important; /* Remove default border */
+    border-radius: 12px !important; /* Rounded corners */
+    box-shadow: 0 5px 15px var(--shadow-light); /* Match card shadow */
+    font-family: var(--font-secondary);
+    line-height: 1.1em;
+}
+
+/* 2. Style the Calendar Day Tiles */
+.react-calendar__tile {
+    /* Add padding for better touch targets */
+    padding: 8px; 
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+/* 3. Style Selected Day */
+.react-calendar__tile--active,
+.react-calendar__tile--hasActive:enabled:hover {
+    /* Use your primary color for selection */
+    background: var(--primary-blue) !important; 
+    color: white !important;
+}
+
+/* 4. Style Today's Date */
+.react-calendar__tile--now {
+    background: #e6f7ff !important; /* Light blue background for today */
+    color: var(--primary-blue) !important;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* 5. Navigation Headers */
+.react-calendar__navigation button {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.react-calendar__month-view__weekdays {
+    color: var(--secondary-grey);
+}

@@ -1,17 +1,46 @@
-.navbar {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
+/* --- CEM-frontend/src/index.css --- */
+
+/* 1. Global Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Essential for responsive layouts */
 }
 
-.navbar a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
+/* 2. Root Variables (Color Palette & Font Stack) */
+:root {
+    --primary-blue: #007bff; /* A nice, vibrant blue */
+    --secondary-grey: #6c757d; /* For sub-text */
+    --background-light: #f4f7f6; /* A very light, subtle grey background */
+    --card-background: #ffffff; /* White for cards */
+    --text-dark: #343a40; /* Darker text for readability */
+    --text-light: #f8f9fa; /* Light text on dark backgrounds */
+    --border-color: #e9ecef; /* Light border for cards */
+    --shadow-light: rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    --font-primary: 'Poppins', sans-serif; /* Modern, clean font */
+    --font-secondary: 'Roboto', sans-serif; /* Good for body text */
 }
 
-.navbar a:hover {
-  color: #007bff;
+/* 3. Body & Base Typography */
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    min-height: 100vh; /* Ensures background covers full height */
+    -webkit-font-smoothing: antialiased; /* Better font rendering */
+    -moz-osx-font-smoothing: grayscale; /* Better font rendering */
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Optional: Link to a Google Font (Add this in public/index.html <head> or in your main CSS if using @import) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap');

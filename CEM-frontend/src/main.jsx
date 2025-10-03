@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import IndexRouter from "./routes";
-import "./index.css";
+// --- CEM-frontend/src/main.jsx ---
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css'; // Global styles for the entire app (e.g., body, font)
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <IndexRouter />
-  </React.StrictMode>
+    <App /> 
+  </React.StrictMode>,
 );

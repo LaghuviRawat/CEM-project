@@ -1,0 +1,41 @@
+/* --- CEM-frontend/src/components/Header.css --- */
+
+.app-navbar {
+    background-color: var(--card-background);
+    padding: 18px 40px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 3px 10px var(--shadow-light); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand .brand-link {
+    font-family: var(--font-primary);
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 30px; 
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 1.05em;
+    padding: 5px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+}

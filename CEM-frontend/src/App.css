@@ -1,0 +1,113 @@
+/* --- CEM-frontend/src/App.css (or where your event styles are) --- */
+
+/* Main container for events section */
+.events-container {
+    max-width: 900px; /* Set a max-width for content */
+    margin: 40px auto; /* Center the content with top/bottom margin */
+    padding: 0 20px; /* Horizontal padding for smaller screens */
+}
+
+.section-title {
+    font-size: 2.5em; /* Larger, more prominent title */
+    color: var(--text-dark);
+    margin-bottom: 30px; /* Space below title */
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+/* Individual Event Card Styling */
+.event-card {
+    background-color: var(--card-background);
+    border-radius: 12px; /* Nicely rounded corners */
+    padding: 30px; /* Generous internal padding */
+    margin-bottom: 25px; /* Space between cards */
+    box-shadow: 0 5px 15px var(--shadow-light); /* More prominent shadow */
+    border: 1px solid var(--border-color); /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
+.event-title {
+    font-size: 1.8em; /* Title of the event */
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 1.1em;
+    color: var(--secondary-grey);
+    margin-bottom: 15px;
+}
+
+.event-detail {
+    font-size: 1em;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    display: flex; /* For better alignment of label and value */
+    align-items: baseline;
+}
+
+.detail-label {
+    font-weight: 600; /* Bold label */
+    color: var(--text-dark);
+    margin-right: 8px; /* Space between label and value */
+    min-width: 60px; /* Ensure labels align nicely */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .app-navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar-nav {
+        gap: 15px;
+    }
+
+    .navbar-brand .brand-link {
+        font-size: 1.5em;
+    }
+
+    .events-container {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    .event-title {
+        font-size: 1.5em;
+    }
+
+    .event-description {
+        font-size: 1em;
+    }
+}
+
+/* --- CEM-frontend/src/App.css --- */
+
+/* Main container for events section */
+.events-container {
+    max-width: 900px;
+    margin: 40px auto; /* Centers content and provides top/bottom margin */
+    padding: 0 20px; /* Horizontal padding for responsiveness */
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-weight: 700;
+}

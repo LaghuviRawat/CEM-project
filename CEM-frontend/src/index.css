@@ -1,5 +1,83 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+/* Inside CEM-frontend/src/index.css */
+
+/* Global Reset for better consistency */
+/* --- CEM-frontend/src/index.css --- */
+
+/* 1. Global Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
+
+/* 2. Root Variables (Color Palette & Font Stack) */
+:root {
+    --primary-blue: #007bff; 
+    --secondary-grey: #6c757d; 
+    --background-light: #f4f7f6; /* Subtle grey background */
+    --card-background: #ffffff; 
+    --text-dark: #343a40; 
+    --border-color: #e9ecef; 
+    --shadow-light: rgba(0, 0, 0, 0.08); 
+    --font-primary: 'Poppins', sans-serif; 
+    --font-secondary: 'Roboto', sans-serif; 
+}
+
+/* 3. Body & Base Typography */
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    margin-bottom: 0.5em;
+}
+
+/* Add Google Font import link into public/index.html <head> tag */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> */
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    min-height: 100vh; /* Ensures content fills the viewport */
+}
+
+/* 2. Main Content Layout (Defined in App.js) */
+.main-content {
+    padding: 20px 40px; /* Generous padding */
+    margin: 0 auto; /* Center the content */
+    max-width: 1200px; /* Max width for large screens */
+}
+
+/* 3. Button Styling for a Beautiful UI */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* CRITICAL CARD STYLING */
+.event-card {
+    background-color: #ffffff; /* Should be white/light */
+    border-radius: 12px;
+    padding: 30px; 
+    margin-bottom: 25px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease; 
+}
+/* ... and other event-related styles ... */

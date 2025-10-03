@@ -1,13 +1,41 @@
+/* --- CEM-frontend/src/components/EventCard.css --- */
+
+/* Individual Event Card Styling */
 .event-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-  background-color: #fff;
-  transition: transform 0.2s;
+    background-color: var(--card-background);
+    border-radius: 12px; 
+    padding: 30px; 
+    margin-bottom: 25px; 
+    box-shadow: 0 5px 15px var(--shadow-light); 
+    border: 1px solid var(--border-color); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event-title {
+    font-size: 1.8em; 
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 1.1em;
+    color: var(--secondary-grey);
+    margin-bottom: 15px;
+}
+
+.event-detail {
+    font-size: 1em;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.detail-label {
+    font-weight: 600; 
+    color: var(--text-dark);
+    margin-right: 8px;
 }
